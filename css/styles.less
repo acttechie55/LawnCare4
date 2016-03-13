@@ -1,0 +1,314 @@
+// Color variables 
+@color0: #ffffff; // Appears 10 times
+@color1: #084c0e; // Appears 7 times
+@color2: #a1a1ab; // Appears 2 times
+@color3: #ee8600; // Appears 2 times
+@color4: #60b420; // Appears 2 times
+@color5: #e6e7e8; // Appears 2 times
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    height: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Disclaimer div
+=============================*/
+.disclaimer {
+    min-width: 100%;
+    width: 100%;
+    background-color: #FF0000;
+    color: @color0;
+    padding: 1em;
+    -webkit-box-shadow: -1px 17px 30px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 17px 30px -2px rgba(0,0,0,0.75);
+    box-shadow: -1px 17px 30px -2px rgba(0,0,0,0.75);
+}
+
+
+
+/*Hero div
+======================*/
+.hero {
+   background-image: url('../images/gazonnaya-trava.jpg');
+   background-size: 100% 100%;
+   height: 600px;
+   width: 1110px;
+   margin: 0 auto;
+   position: relative;
+   .site-title {
+       padding-left: 1.5em;
+        padding-top: 1.5em;
+   }
+}
+
+.white-title {
+    padding-left: .5em;
+    padding-bottom: 1em;
+    font-weight: bold;
+    font-size: 5em;
+    text-shadow: 2px 2px 2px #26404f;
+    color: @color0;
+    position: absolute;
+    bottom: 0;
+    top: 4em;
+}
+
+
+/* Form Styles 
+=========================================================*/
+.form {      
+width: 17em;
+height: 32.500em;
+position: absolute;
+text-align: center;
+top: 20px;
+right: 45px;
+border-radius: 2px;
+border: 1px solid #D8DDD0;
+-webkit-box-shadow: -10px 80px 20px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: -10px 80px 20px -1px rgba(0,0,0,0.75);
+box-shadow: -10px 80px 20px -1px rgba(0,0,0,0.75);
+    .form-logo-div {
+        background-color: @color0;
+    }
+    .form-logo {
+        padding-top: .5em;
+        width: 95%;       
+    }
+    .form-contact-div {
+        background-color: @color0;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        h4 {
+            font-weight: 200;
+            color: @color1;
+        }       
+    }
+    .form-fields {
+        background-color: #e3e3e3;
+        padding-bottom: 1em;
+        p:nth-child(1) {
+            padding-top: 1em;
+        }
+    }
+    table {
+        margin: auto;
+    }
+    .cell-disclosure {
+        font-size: .5em;
+        padding: 1em;
+    }
+    .form-button {
+        background-color: @color3;
+        color: @color0;
+        font-weight: bold;
+        border-radius: 10px;
+        border: 1px solid @color0;
+        width: 90%;
+    }
+    .form-orange {
+        color: @color3;
+    }
+    
+    .form-gray {
+        color: @color2;
+    }
+    .form-dark-green {
+        color: @color1;
+    }
+    .form-flag {
+        width: 14em;
+        height: 6em;
+        padding-top: 1em;
+        position: relative;
+        background: #d7d8d9;
+        margin: 0 auto;
+        &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 2em solid @color0;
+        border-left: 7em solid transparent;
+        border-right: 7em solid transparent;       
+        }
+        img {
+            height: 25px;
+        }
+    }
+}
+
+/*Tabs Row Styles 
+====================================================*/
+.tabs-row {
+    position: absolute;
+    top: 92.5%;
+    padding-left: 3em;
+    .btn {
+        padding-left: 1em;
+        padding-right: 1em;
+        border-color: @color0;   
+        width: 100px;
+    }
+    button:nth-child(2) {
+        background-color: @color5;
+        border-color: @color5;
+        z-index: -1;   
+    }
+}
+
+/* Product Description Styles
+===================================================*/
+.prod-desc-row {
+    padding-top: 3em;
+    padding-left: 3em;
+    .first-text {
+        color: @color1;
+        font-size: 2em;
+        font-weight: 300;
+    }
+    .second-text {
+        font-size: 1.5em;
+    }
+}
+
+
+/*Grid Styles 
+==================================================*/
+.grid-table {
+    margin-top: 5em;
+    margin-left: 3em;
+    table-layout: fixed;
+    width: 900px;
+    // min-width: 90%;
+    // max-width: 90%;
+    // max-height: 100%;
+}
+tr,td {
+    border: 3px solid @color0;
+}
+
+td {
+    .tru-green-service {
+        text-align: center;
+        color: @color0;
+        background-color: @color4;
+        margin:0;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+}
+
+.tru-green-logo {
+    height: 50px;
+}
+.grid-logo {
+    background-color: @color4;
+}
+.standard-grid-text {
+    background-color: #c2dfa8;
+    padding: 1em;
+}
+
+.standard-leaf-column {
+    background-color: #e9f5df;
+    text-align: center;
+}
+
+.tru-complete-column {
+    background-color: #ccf1df;
+    text-align: center;
+}
+
+.tru-complete-description {
+    background-color: #6dd79f;
+    padding: 1em;
+    margin: 0;
+}
+
+/*Guarantee Row Styles 
+================================================*/
+
+.guarantee-div {
+    margin: 3em auto;
+    background-color: #afd891;
+    width: 600px;
+    padding: 1em;
+
+    h3 {
+        color: @color1;
+    }
+    p {
+        color: @color1;
+        font-size: 1.5em;
+    }
+    img {
+        bottom: 10em;
+        position: relative;
+        max-width: 25%;
+        min-width: 25%;
+        max-height: 25%;
+        min-height: 25%;
+        padding-top: .5em;
+    }
+}
+
+/*Contact Row Styles 
+==========================================*/
+.contact-div {
+    width: 100%;
+    padding: 3em;
+    padding-bottom: 2em;
+    .contact-row {
+        border: 3px solid @color1;  
+        margin: 0 auto;
+        border-radius: 2em;
+        padding: 1.5em;
+        height: 100px;
+        width: 520px;
+    }
+    .tru-green-logo {
+    height: 100px;
+    margin-right: 3em;
+    float: left;
+    margin: 0;
+        img {
+            border-right: 1px solid @color2;
+            height: 70px;
+        }
+    }
+}   
+
+.tru-green-contact {
+    float: right;
+    p {
+        font-weight: 200;
+        color: @color1;
+        margin: 0;
+    }
+}
+
+
+
+/*Privacy Policy Footer Styles 
+=============================================*/
+.privacy-policy-row {
+    min-width: 100%;
+    width: 100%;
+    p {      
+        background-color: #f6f7f8;
+        margin-bottom: 0;
+        font-size: 11px;
+        padding: 2em;
+        color: #5f616d;     
+    }
+}
